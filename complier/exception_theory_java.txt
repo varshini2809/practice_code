@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) 
+	{
+	    Scanner in = new Scanner(System.in);
+	   /* int n=in.nextInt();
+	    int a[]=new int[n];
+	    int i;
+	    for(i=0;i<n;i++)
+	    {
+	        a[i]=in.nextInt();
+	    }
+	    int s=in.nextInt();*/
+	    try 
+	    {
+	        int n=in.nextInt();
+	    int a[]=new int[n];
+	    int i;
+	    for(i=0;i<n;i++)
+	    {
+	        a[i]=in.nextInt();
+	    }
+	    int s=in.nextInt();
+	       if(s<n)
+	       {
+	           System.out.println(a[s]);
+	       }
+	    }
+	    catch(ArrayIndexOutOfBoundsException ai)
+	    {
+	        System.out.println("array index out of bound");
+	    }
+	}
+}
+
