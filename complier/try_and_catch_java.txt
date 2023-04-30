@@ -1,0 +1,50 @@
+import java.util.*;
+class Numerator implements Runnable
+{
+    int x,y,num;
+    public Numerator(int x,int y)
+    {
+        this.x=x;
+        this.y=y;
+    }
+    public void run()
+    {
+        num=x+y;System.out.println("num : "+num);
+    }
+}
+class Denominator implements Runnable
+{
+    int x,y,denom;
+    public Denominator(int x,int y)
+    {
+        this.x=x;
+        this.y=y;
+    }
+    public void run()
+    {
+        denom=x*y;System.out.println("denom : "+denom);
+    }
+}
+public class Main
+{
+    public static void main(String[] args)
+    {
+        float res;
+        Numerator n =new Numerator(5,10);
+        Denominator d =new Denominator(5,10);
+        Thread t1=new Thread(n);
+        Thread t2=new Thread(d);
+        t1.start();
+        t2.start();
+        try {
+            t1.join();
+            t2.join();
+        }
+        catch(InterruptedException ie)
+        {
+            ie.printStackTrace();
+        }
+        res=(float)n.num/d.denom;
+        System.out.println("Result="+res);
+    }
+}
