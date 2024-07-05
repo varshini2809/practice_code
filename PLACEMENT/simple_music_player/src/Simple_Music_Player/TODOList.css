@@ -1,0 +1,111 @@
+.music-player {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ffaf83, #ed69fc);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+   /* #e8fc69 */
+  h1 {
+    text-align: center;
+    -webkit-text-fill-color: #001cf2;
+    color: #333;
+  }
+  
+  .search-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-box input {
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #00d916;
+    border-radius: 5px;
+  }
+  
+  .form {
+    background-color: #dcf1ff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(44, 51, 247, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ffb379;
+    border-radius: 5px;
+  }
+  
+  .form button {
+    background-color: #4522e5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .track-list {
+    display: grid;
+    gap: 20px;
+  }
+  
+  .track-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .track-card-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .track-card button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .track-card button:hover {
+    background-color: #218838;
+  }
+  
+  .track-card button:nth-child(2) {
+    background-color: #dc3545;
+  }
+  
+  .track-card button:nth-child(2):hover {
+    background-color: #c82333;
+  }
+  
